@@ -133,3 +133,21 @@ dmesg -T | tail -n 20
 ```
 ![Opsional](Images/2.4%20Opsi%20Kernel.png "")
 
+## Praktikum 2.5 — Konfigurasi Auto-load dan Blacklist
+1. Buat file auto-load:
+```
+echo " loop " | sudo tee / etc / modules - load . d / loop . conf
+```
+![AutoLoad](Images/2.5%20AutoLoad.png "")
+
+2. Simulasikan verifikasi (tanpa reboot) dengan memastikan modul sudah aktif:
+```
+lsmod | grep -i loop
+```
+![Verif](Images/2.5%20Verifikasi.png "")
+
+3. (Opsional, konsep) blacklist modul:
+```
+1 # echo " blacklist loop " | sudo tee / etc/ modprobe .d/blacklist - loop . conf
+```
+![Blacklist](Images/2.5%20Opsi%20Blacklist.png "")

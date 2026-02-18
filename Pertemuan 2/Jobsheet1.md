@@ -100,3 +100,36 @@ sudo blkid
 findmnt /
 ```
 ![root filesystem](Images/2.3%20root%20filesystem.png "root filesystem")
+
+## Praktikum 2.4 — Melihat Modul Aktif dan Informasinya
+1. Cek versi kernel:
+```
+uname -r
+```
+![Kernel](Images/2.4%20Kernel.png "")
+
+2. Tampilkan daftar modul aktif:
+```
+lsmod | head
+```
+![Modul](Images/2.4%20Modul%20Aktif.png "")
+
+3. Pilih salah satu modul (contoh aman: loop) dan lihat detailnya:
+```
+modinfo loop
+```
+![Modul1](Images/2.4%20Satu%20Modul.png "")
+
+4. Muat modul (jika belum aktif), lalu verifikasi:
+```
+1 sudo modprobe loop
+2 lsmod | grep -i loop
+```
+![MuatModul](Images/2.4%20Muat%20Modul.png "")
+
+5. (Opsional) lihat pesan kernel terbaru:
+```
+dmesg -T | tail -n 20
+```
+![Opsional](Images/2.4%20Opsi%20Kernel.png "")
+

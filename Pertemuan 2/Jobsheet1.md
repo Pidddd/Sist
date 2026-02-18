@@ -81,3 +81,22 @@ Jawab   :
 * Nama Driver/Modul Kernel: dxgkrnl
 (Penjelasan: Terlihat pada baris "Kernel driver in use").
 * Deskripsi Singkat Fungsinya:  Perangkat ini berfungsi sebagai pengontrol grafis 3D virtual yang memungkinkan sistem Linux kamu (WSL) menggunakan tenaga kartu grafis (GPU) dari Windows untuk menjalankan aplikasi yang butuh performa visual tinggi atau perhitungan berat.
+
+## Praktikum 2.3 — Identifikasi Storage dan Filesystem
+1. Lihat daftar disk/partisi:
+```
+lsblk -f
+```
+![Disk](Images/2.3%20Disk.png "Disk/Partisi")
+
+2. Tampilkan UUID dan tipe filesystem:
+```
+sudo blkid
+```
+![UUID](Images/2.3%20UUID.png "UUID")
+
+3. Lihat mount point untuk root filesystem:
+```
+findmnt /
+```
+![root filesystem](Images/2.3%20root%20filesystem.png "root filesystem")

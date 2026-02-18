@@ -268,7 +268,7 @@ grep -E "INFO|WARN" data.log
 5 EOF
 6 cat config . txt
 ```
-![Make file](Images/2.10%20Make%20File.png2 "")
+![Make file](Images/2.10%20Make%20File.png "")
 
 2. Ganti dev menjadi prod (tanpa mengubah file asli):
 ```

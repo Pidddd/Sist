@@ -9,8 +9,17 @@
 ```    
 lscpu
 ```
-
+![CPU Information](Images/2.1%20CPU.png "cpu")
 2. Tampilkan Ringkasan Memory
 ```
 free -h
 ```
+
+3. (Opsional) cek informasi hardware dari DMI/BIOS (butuh sudo):
+```
+sudo dmidecode -t system
+```
+
+Latihan 2.1
+Catat: (1) jumlah CPU(s), core/thread, (2) total RAM, (3) total swap. Jelaskan perbedaan RAM vs swap dalam 2–3 kalimat.
+Jawab : 

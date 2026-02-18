@@ -179,3 +179,16 @@ Jawab:
 
 * Character Device (Penanda 'c'): Terlihat pada Gambar percobaann kedua untuk perangkat /dev/tty, di mana karakter paling awal dari string permission adalah huruf c. Ini menunjukkan perangkat yang mengelola data karakter per karakter secara berurutan, seperti terminal atau keyboard.
 
+## Praktikum 2.7 — Melihat Informasi udev
+1. Cek atribut udev untuk disk:
+```
+1 udevadm info -- query = all -- name =/ dev / sda | head -n 30
+```
+![Atribute](Images/2.7%20Atribute.png "")
+
+2. (Opsional) monitor event udev (jalankan, lalu colok/lepas USB pada mesin fisik):
+```
+1 sudo udevadm monitor
+```
+![Monitor](Images/2.7%20opsi.png "")
+

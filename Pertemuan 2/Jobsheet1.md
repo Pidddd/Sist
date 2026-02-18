@@ -26,7 +26,7 @@ sudo dmidecode -t system
 ### Latihan 2.1
 Catat: (1) jumlah CPU(s), core/thread, (2) total RAM, (3) total swap. Jelaskan perbedaan RAM vs swap dalam 2–3 kalimat.
 
-Jawab : 
+Jawab :<br>
 * Informasi CPU
 Jumlah CPU (Logical cores): 8
 Core per socket: 4 Core fisik.

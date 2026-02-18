@@ -10,16 +10,19 @@
 lscpu
 ```
 ![CPU Information](Images/2.1%20CPU.png "cpu")
+
 2. Tampilkan Ringkasan Memory
 ```
 free -h
 ```
 ![Memory Information](Images/2.1%20Memory.png "Memory")
+
 3. (Opsional) cek informasi hardware dari DMI/BIOS (butuh sudo):
 ```
 sudo dmidecode -t system
 ```
 ![DMI / BIOS](Images/2.1%20DMIorBIOS.png "DMI or BIOS")
+
 ### Latihan 2.1
 Catat: (1) jumlah CPU(s), core/thread, (2) total RAM, (3) total swap. Jelaskan perbedaan RAM vs swap dalam 2–3 kalimat.
 Jawab : 
@@ -41,26 +44,31 @@ RAM adalah memori utama yang sangat cepat untuk memproses data aplikasi yang sed
 lspci
 ```
 ![PCI](Images/2.2%20PCI.png "PCI")
+
 2. Lihat perangkat PCI beserta driver kernel yang digunakan:
 ```
 lspci - nnk
 ```
 ![Driver PCI](Images/2.2%20Driver%20PCI.png "Driver PCI")
+
 3. Fokus pada NIC (Ethernet) untuk mencari modul driver:
 ```
 lspci - nnk | grep - A3 -i ethernet
 ```
 ![NIC](Images/2.2%20NIC&Driver.png "NIC and Driver")
+
 4. Lihat perangkat USB:
 ```
 lsusb
 ```
 ![USB](Images/2.2%20USB.png "USB")
+
 5. Lihat topologi USB (tree):
 ```
 lsusb -t
 ```
 ![TopologiUSB](Images/2.2%20Topologi%20USB.png "TopologiUSB")
+
 ### Latihan 2.2
 Temukan 1 perangkat PCI (misal NIC) dan tuliskan: Vendor:Device ID (angka
 heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.

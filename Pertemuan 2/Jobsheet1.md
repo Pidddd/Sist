@@ -62,6 +62,7 @@ lspci - nnk | grep - A3 -i ethernet
 lsusb
 ```
 ![USB](Images/2.2%20USB.png "USB")
+* <font color="red"> Perintah lsusb tidak menampilkan hasil apa pun karena perangkat USB fisik belum di-mounting atau dihubungkan dari sistem utama (Windows) ke dalam sistem virtual (WSL). Akibatnya, sistem Linux tidak dapat mendeteksi adanya perangkat keras USB yang terpasang. <font>
 
 5. Lihat topologi USB (tree):
 ```

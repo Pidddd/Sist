@@ -424,3 +424,46 @@ Jawab:
 * Analisis Protokol: Port ini berjalan pada protokol TCP dan UDP secara bersamaan untuk memastikan pengiriman data yang efisien dan reliabel.
 
 * Kegunaan: Port 53 berfungsi sebagai layanan DNS (Domain Name System) yang bertugas sebagai "penerjemah" alamat; ia mengubah nama domain yang mudah diingat manusia (seperti https://www.google.com/search?q=google.com) menjadi alamat IP numerik yang dipahami oleh mesin agar koneksi internet dapat terhubung ke tujuan yang benar.
+
+## 1.9 Latihan
+### Latihan 2.A
+Jalankan lspci -nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vendor:device, dan kernel driver in use.
+* Pilihan Perangkat: SCSI storage controller
+* Nama Perangkat: Red Hat, Inc. Virtio console
+* ID vendor:device: 1af4:1043
+* Kernel driver in use: virtio-pci
+![](Images/2.A.png "")
+
+### Latihan 2.B
+Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
+* Device Root: /dev/sdd
+* Tipe Filesystem: ext4
+* UUID: 4f690b8a-b7b4-4fff-a844-9d78953e7f90
+![](Images/2.B.png "")
+
+### Latihan 2.C
+Buat file server.log berisi minimal 10 baris dengan variasi kata: INFO, WARN, ERROR. Gunakan grep untuk menampilkan hanya baris ERROR.
+![](Images/2.C.png "")
+
+### Latihan 2.D
+Gunakan sed untuk mengganti semua kata server menjadi node pada file latihan. Tunjukkan sebelum dan sesudah.
+Before  :
+![bf](Images/2.D%20BF.png "")
+After   :
+![af](Images/2.D%20AF.png "")
+
+### Latihan 2.E
+Gunakan df -h lalu awk untuk menampilkan filesystem yang penggunaan disk di atas 70%.
+![](Images/2.E.png "")
+* Saat perintah dijalankan, tidak ada output yang muncul. Hal ini menunjukkan bahwa seluruh filesystem pada sistem saat ini memiliki penggunaan disk di bawah 70% (kondisi sistem sehat).
+
+### Latihan 2.F
+Jalankan sleep 600 &. Temukan PID-nya dengan ps. Hentikan dengan SIGTERM. Jelaskan beda SIGTERM vs SIGKILL.
+* SIGTERM (15): Adalah sinyal penghentian standar. Ini seperti menekan tombol "Close" atau "Exit" pada aplikasi. Proses diberi kesempatan untuk menyimpan data dan menutup diri dengan rapi.
+
+* SIGKILL (9): Adalah penghentian paksa. Ini seperti mencabut kabel power komputer. Proses langsung mati seketika tanpa sempat menyimpan apa pun.
+![](Images/2.F.png "")
+
+### Latihan 2.G
+Gunakan systemctl –failed. Jika tidak ada yang gagal, pilih satu service aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.
+![](Images/2.G.png "")

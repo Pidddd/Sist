@@ -230,7 +230,7 @@ who
 ### 1.10.1. Latihan Konseptual
 #### Latihan 1.1
 Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2 OS berbeda (Windows, macOS, atau Linux).
-* Jawab : 
+Jawab : 
 1. Manajemen Proses (Mengatur Jalannya Aplikasi)
 Fungsi ini bertugas mengatur aplikasi mana yang boleh berjalan dan memastikan CPU (otak komputer) membagi waktunya dengan adil agar tidak terjadi tabrakan antar program.
 * Contoh di Windows: Menggunakan Task Manager untuk melihat aplikasi yang sedang berjalan dan mematikan program yang macet (Not Responding).
@@ -258,9 +258,7 @@ Fungsi ini menjaga data dan sistem dari akses pengguna yang tidak sah serta meng
 
 #### Latihan 1.2
 Kapan sebaiknya menggunakan Windows vs Linux vs macOS? Analisis berdasarkan use case: gaming, development, server, creative work, dan enterprise.
-* Jawab : 
-Tentu, ini format yang lebih ringkas dan langsung ke poin terbaik untuk setiap kebutuhan:
-
+Jawab : 
 1. Gaming (Bermain Game)
 * Terbaik: Windows.
 Hampir semua game terbaru dikembangkan khusus untuk Windows. Dukungan driver kartu grafis dan teknologi seperti DirectX 12 menjadikannya pilihan nomor satu untuk performa gaming maksimal.

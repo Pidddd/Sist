@@ -6,7 +6,9 @@
 
 ## 1.6. Instalasi Sistem Operasi
 ### 1.6.4. Praktik: Instalasi Ubuntu Server 22.04 LTS
-![](Images/1.6.4.png "")
+![](Images/10.2%20Install.png "")
+![](Images/10.2%20login.png "")
+![](Images/10.2%20final.png "")
 
 ## 1.7. Partisi Disk dan Sistem File
 ### 1.7.3. Skema Partisi Linux
